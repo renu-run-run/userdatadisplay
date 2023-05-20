@@ -9,12 +9,13 @@
 .table{
   text-align: center;
   margin: 5rem ;
-  background-color: rgb(159, 84, 230);
+  background-color: rgb(99, 255, 107);
   padding: 10px;
   box-shadow: 0 0 10px black;
 }
 .table tr,th,td{
   border: 1px solid black;
+  padding: 10px;
 
 }
 .pagination{
