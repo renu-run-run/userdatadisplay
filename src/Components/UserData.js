@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 const UserData = () => {
     const [userData, setUserData] = useState([]);
     const [search, setSearch] = useState([]);
-    const [page, setPage] = useState(2);
+    const [page, setPage] = useState(1);
     const navigate = useNavigate();
      // eslint-disable-next-line
     useEffect(()=>{
@@ -25,7 +25,7 @@ const UserData = () => {
     }
     return(
         <div>
-        <h1> Search  User Data</h1>
+        <h2> Search  User Data</h2>
         <input type="text" onChange={e =>setSearch(e.target.value)} placeholder="Enter Name"/>
 
         <table className="table">

@@ -8,9 +8,9 @@
 
 .table{
   text-align: left;
-  margin: 5rem ;
+  margin: 1rem 5rem ;
   background-color: rgb(234, 201, 255);
-  padding: 10px;
+  padding: 5px;
   box-shadow: 0 0 10px black;
   width: 90%;
 }
@@ -38,17 +38,20 @@
   background-color: rgb(170, 177, 186);
 }
 input{
-  margin-top: 3rem;
+  margin-top: 0.5rem;
   margin-left: 5rem;
-  padding: 20px;
-  width: 87%;
+  padding: 10px;
+  width: 88.5%;
   background-color: rgb(248, 241, 254);
   box-shadow: 0 0 10px rgb(143, 143, 143);
   border: none;
 }
-h1{
+h2{
+  line-height: 3px;
   text-align: center;
   color: rgb(70, 28, 91);
+  font-size: 23px;
+  
 }
 @media only screen and (max-width: 900px) {
   .table{
@@ -85,6 +88,6 @@ h1{
   }
   .pagination{
     margin: 0 0 3rem 0;
-    display: none;
+    
   }
 }
