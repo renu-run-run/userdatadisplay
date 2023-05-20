@@ -25,7 +25,7 @@ const UserData = () => {
     }
     return(
         <div>
-        <h1> search the User Data</h1>
+        <h1> Search  User Data</h1>
         <input type="text" onChange={e =>setSearch(e.target.value)} placeholder="Enter Name"/>
 
         <table className="table">
@@ -64,9 +64,9 @@ const UserData = () => {
           </tbody>
         </table>
         {userData.length > 0 && <div className="pagination">
-          <span  onClick={()=> selectPageH(page - 1)} > ⬅️</span>
+          <span className="span" onClick={()=> selectPageH(page - 1)} > ⬅️</span>
           {[...Array(userData.length/10)].map((_,i)=>{return <span className={page === i+1 ?"s":""} onClick={()=> selectPageH(i+1)}>{i+1}&nbsp;</span>})}
-          <span  onClick={()=> selectPageH(page + 1)}> ➡️</span>
+          <span className="span" onClick={()=> selectPageH(page + 1)}> ➡️</span>
         
         </div>}
         </div>

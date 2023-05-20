@@ -1,17 +1,18 @@
 
 .App{
-  margin: 0 0 5rem 0;
+  margin: 0 ;
   align-items: center;
   justify-content: center;
 }
 
 
 .table{
-  text-align: center;
+  text-align: left;
   margin: 5rem ;
-  background-color: rgb(99, 255, 107);
+  background-color: rgb(234, 201, 255);
   padding: 10px;
   box-shadow: 0 0 10px black;
+  width: 90%;
 }
 .table tr,th,td{
   border: 1px solid black;
@@ -21,8 +22,8 @@
 .pagination{
   width: 30%;
   display: flex;
-  text-align: center;
-  margin: 3rem 0  3rem 8rem;
+  
+  margin: 0 0 3rem 32rem;
   padding: 10px;
   background-color: rgb(248, 241, 254);
   box-shadow: 0 0 10px rgb(143, 143, 143);
@@ -36,13 +37,21 @@
   background-color: rgb(170, 177, 186);
 }
 input{
-  margin: 1rem 0 0 5rem ;
-  padding: 10px;
-  width: 35%;
+  margin-top: 3rem;
+  margin-left: 5rem;
+  padding: 20px;
+  width: 87%;
   background-color: rgb(248, 241, 254);
   box-shadow: 0 0 10px rgb(143, 143, 143);
   border: none;
 }
 h1{
-  margin-left: 5rem;
+  text-align: center;
+  color: rgb(70, 28, 91);
+}
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [className="App pagination span "] {
+    width: 100%;
+  }
 }
